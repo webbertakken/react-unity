@@ -1,0 +1,49 @@
+{
+  "name": "scene2",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Another app showing a different scene",
+  "author": "Webber <webber@takken.io>",
+  "homepage": "https://github.com/webbertakken/react-unity#readme",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "3.2.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "main": "src/index.js",
+  "directories": {
+    "lib": "src"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webbertakken/react-unity.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webbertakken/react-unity/issues"
+  }
+}
