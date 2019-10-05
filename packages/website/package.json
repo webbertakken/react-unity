@@ -1,0 +1,31 @@
+{
+  "name": "website",
+  "version": "0.0.0",
+  "description": "Website package using React and WebGL to display a Unity-scene",
+  "keywords": [
+    "react",
+    "unity",
+    "webgl"
+  ],
+  "author": "Webber <webber@takken.io>",
+  "homepage": "https://github.com/webbertakken/react-unity#readme",
+  "license": "MIT",
+  "main": "lib/website.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webbertakken/react-unity.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/webbertakken/react-unity/issues"
+  }
+}
