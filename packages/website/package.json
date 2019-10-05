@@ -13,8 +13,7 @@
   "license": "MIT",
   "main": "src/index.js",
   "directories": {
-    "lib": "src",
-    "test": "__tests__"
+    "lib": "src"
   },
   "files": [
     "src"
@@ -27,8 +26,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test-local": "react-scripts test",
-    "test": "echo \"Error: run tests from root\" && exit 1",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
