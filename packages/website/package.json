@@ -1,6 +1,7 @@
 {
   "name": "website",
   "version": "0.0.0",
+  "private": true,
   "description": "Website package using React and WebGL to display a Unity-scene",
   "keywords": [
     "react",
@@ -10,20 +11,44 @@
   "author": "Webber <webber@takken.io>",
   "homepage": "https://github.com/webbertakken/react-unity#readme",
   "license": "MIT",
-  "main": "lib/website.js",
+  "main": "src/index.js",
   "directories": {
-    "lib": "lib",
+    "lib": "src",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "src"
   ],
+  "dependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "3.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test-local": "react-scripts test",
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/webbertakken/react-unity.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/webbertakken/react-unity/issues"
