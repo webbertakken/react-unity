@@ -8,7 +8,6 @@
     "unity",
     "webgl"
   ],
-  "homepage": "https://github.com/webbertakken/react-unity#readme",
   "bugs": {
     "url": "https://github.com/webbertakken/react-unity/issues"
   },
@@ -53,7 +52,8 @@
   "dependencies": {
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "react-unity-webgl": "^7.1.7"
   },
   "devDependencies": {}
 }

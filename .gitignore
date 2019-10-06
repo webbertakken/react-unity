@@ -14,6 +14,9 @@ firebase-debug.log
 # testing
 **/coverage
 
+# unity builds
+/packages/*/src/unity/
+
 # production
 **/build
 **/dist
