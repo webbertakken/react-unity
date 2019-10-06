@@ -1,21 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import styles from './app.module.css';
+import Unity, { UnityContent } from 'react-unity-webgl';
 
-function App() {
+const App = () => {
+  const unityContent = new UnityContent('unity/Build.json', 'unity/UnityLoader.js');
+
   return (
-    <div className={styles.main}>
-      <header className={styles.header}>
-        <img src={logo} className={styles.logo} alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className={styles.link} href=" https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+    <div style={{ padding: '2rem' }}>
+      <h1 style={{ color: '#ccc' }}>WebGL Test</h1>
+      <div style={{ border: '1px solid #ccc' }}>
+        <Unity unityContent={unityContent} />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
