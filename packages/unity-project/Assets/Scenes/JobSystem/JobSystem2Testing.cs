@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Jobs;
@@ -14,6 +15,10 @@ public class JobSystem2Testing : MonoBehaviour
   [SerializeField] private bool useJobs;
   [SerializeField] private Transform transform;
   private List<Ball> balls;
+
+  // Import the JSLib
+  [DllImport("__Internal")]
+  private static extern void UpdateRenderTime(string duration);
 
   public class Ball
   {
@@ -91,7 +96,9 @@ public class JobSystem2Testing : MonoBehaviour
       }
     }
 
-    Debug.Log($"{(Time.realtimeSinceStartup - startTime) * 1000f}ms");
+    var duration = $"{(Time.realtimeSinceStartup - startTime) * 1000f}ms";
+    UpdateRenderTime(duration);
+    Debug.Log(duration);
   }
 }
 
