@@ -28,7 +28,15 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "lint": "concurrently \"yarn:lint:*\"",
+    "lint:js": "eslint . --format table --ignore-path ../../.eslintignore",
+    "lint:format": "prettier --check \"**/*.{js,json,css,scss,md,yml,yaml}\"",
+    "lint:styles": "stylelint \"**/*.{css,scss}\" --formatter verbose --ignore-path ../../.eslintignore",
+    "fix": "concurrently \"yarn:fix:*\"",
+    "fix:js": "eslint . --fix --format table --ignore-path ../../.eslintignore",
+    "fix:format": "prettier --write \"**/*.{js,json,css,scss,md,yml,yaml}\"",
+    "fix:styles": "stylelint --fix \"**/*.{css,scss}\" --formatter verbose --ignore-path ../../.eslintignore"
   },
   "browserslist": {
     "production": [
@@ -42,15 +50,10 @@
       "last 1 safari version"
     ]
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "dependencies": {
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0"
   },
-  "devDependencies": {
-    "coveralls": "^3.0.6"
-  }
+  "devDependencies": {}
 }

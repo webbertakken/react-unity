@@ -6,28 +6,33 @@
     "packages/website"
   ],
   "scripts": {
-    "lint": "xo .",
-    "format": "xo . --fix",
+    "fix": "yarn workspaces run fix",
+    "lint": "yarn workspaces run lint",
     "test": "yarn workspaces run test --watchAll=false --coverage",
     "coverage": "codecov"
   },
-  "xo": {
-    "envs": [
-      "node",
-      "es6",
-      "browser"
-    ],
-    "extends": [
-      "react-app",
-      "xo-react"
-    ],
-    "globals": [],
-    "prettier": true,
-    "space": true
-  },
   "devDependencies": {
+    "babel-eslint": "10.0.3",
     "codecov": "3.6.1",
+    "concurrently": "4.1.2",
+    "eslint": "6.5.1",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-config-prettier": "6.4.0",
+    "eslint-config-react-app": "5.0.2",
     "eslint-config-xo-react": "0.20.0",
+    "eslint-plugin-cypress": "2.7.0",
+    "eslint-plugin-flowtype": "4.3.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-react": "7.16.0",
+    "eslint-plugin-react-hooks": "2.1.2",
+    "eslint-plugin-unicorn": "12.0.2",
+    "prettier": "1.18.2",
+    "stylelint": "11.0.0",
+    "stylelint-config-prettier": "6.0.0",
+    "stylelint-config-standard": "19.0.0",
+    "stylelint-prettier": "1.1.1",
     "xo": "latest"
   }
 }
