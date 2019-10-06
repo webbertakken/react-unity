@@ -16,4 +16,4 @@ script:
   - yarn format
   - yarn lint
   - yarn test
-  - yarn coverage
+  - yarn run coverage
