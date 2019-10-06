@@ -2,8 +2,8 @@
   "name": "root",
   "private": true,
   "workspaces": [
-    "packages/scene2",
-    "packages/website"
+    "packages/scene1",
+    "packages/scene2"
   ],
   "scripts": {
     "fix": "yarn workspaces run fix",

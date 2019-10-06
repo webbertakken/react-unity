@@ -1,5 +1,5 @@
 {
-  "name": "website",
+  "name": "scene1",
   "version": "0.0.0",
   "private": true,
   "description": "Website package using React and WebGL to display a Unity-scene",
