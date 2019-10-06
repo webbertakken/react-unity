@@ -8,8 +8,6 @@ before_install:
 
 cache:
   yarn: true
-  directories:
-    - node_modules
 
 before_script:
   - yarn
