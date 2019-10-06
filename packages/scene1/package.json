@@ -26,7 +26,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cpx src/unity/* build/unity/",
     "test": "react-scripts test",
     "lint": "concurrently \"yarn:lint:*\"",
     "lint:js": "eslint . --format table --ignore-path ../../.eslintignore",
@@ -55,5 +55,9 @@
     "react-scripts": "3.2.0",
     "react-unity-webgl": "^7.1.7"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "cross-env": "^6.0.3",
+    "rimraf": "^3.0.0"
+  }
 }
