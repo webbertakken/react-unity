@@ -9,7 +9,9 @@
     "fix": "yarn workspaces run fix",
     "lint": "yarn workspaces run lint",
     "test": "yarn workspaces run test --watchAll=false --coverage",
-    "coverage": "codecov"
+    "coverage": "codecov",
+    "start": "yarn workspace scene1 run build && serve -s packages/scene1/build",
+    "deploy": "yarn workspace scene1 run build && firebase deploy"
   },
   "devDependencies": {
     "babel-eslint": "10.0.3",
@@ -29,6 +31,7 @@
     "eslint-plugin-react-hooks": "2.1.2",
     "eslint-plugin-unicorn": "12.0.2",
     "prettier": "1.18.2",
+    "serve": "11.2.0",
     "stylelint": "11.0.0",
     "stylelint-config-prettier": "6.0.0",
     "stylelint-config-standard": "19.0.0",
