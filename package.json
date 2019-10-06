@@ -1,29 +1,29 @@
 {
   "name": "root",
   "private": true,
+  "workspaces": [
+    "packages/scene2",
+    "packages/website"
+  ],
   "scripts": {
-    "test": "yarn workspaces run test --watchAll=false",
     "lint": "xo .",
-    "format": "xo . --fix"
+    "format": "xo . --fix",
+    "test": "yarn workspaces run test --watchAll=false"
   },
   "xo": {
-    "prettier": true,
-    "space": true,
     "envs": [
       "node",
       "es6",
       "browser"
     ],
-    "globals": [],
     "extends": [
       "react-app",
       "xo-react"
-    ]
+    ],
+    "globals": [],
+    "prettier": true,
+    "space": true
   },
-  "workspaces": [
-    "packages/scene2",
-    "packages/website"
-  ],
   "devDependencies": {
     "eslint-config-xo-react": "0.20.0",
     "xo": "latest"

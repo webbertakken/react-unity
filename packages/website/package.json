@@ -8,29 +8,27 @@
     "unity",
     "webgl"
   ],
-  "author": "Webber <webber@takken.io>",
   "homepage": "https://github.com/webbertakken/react-unity#readme",
+  "bugs": {
+    "url": "https://github.com/webbertakken/react-unity/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webbertakken/react-unity.git"
+  },
   "license": "MIT",
+  "author": "Webber <webber@takken.io>",
+  "files": [
+    "src"
+  ],
   "main": "src/index.js",
   "directories": {
     "lib": "src"
   },
-  "files": [
-    "src"
-  ],
-  "dependencies": {
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "test": "react-scripts test"
   },
   "browserslist": {
     "production": [
@@ -44,11 +42,15 @@
       "last 1 safari version"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/webbertakken/react-unity.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "bugs": {
-    "url": "https://github.com/webbertakken/react-unity/issues"
+  "dependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "3.2.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.6"
   }
 }
