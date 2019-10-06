@@ -26,7 +26,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && cpx src/unity/* build/unity/",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "lint": "concurrently \"yarn:lint:*\"",
     "lint:js": "eslint . --format table --ignore-path ../../.eslintignore",
@@ -50,6 +50,7 @@
     ]
   },
   "dependencies": {
+    "firebase": "^7.1.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
