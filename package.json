@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "xo .",
     "format": "xo . --fix",
-    "test": "yarn workspaces run test --watchAll=false"
+    "test": "yarn workspaces run test --watchAll=false --coverage",
+    "coverage": "codecov"
   },
   "xo": {
     "envs": [
@@ -25,6 +26,7 @@
     "space": true
   },
   "devDependencies": {
+    "codecov": "3.6.1",
     "eslint-config-xo-react": "0.20.0",
     "xo": "latest"
   }

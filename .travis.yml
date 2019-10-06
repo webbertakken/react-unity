@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - 8
+  - '8'
 
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.19.0
@@ -17,4 +17,5 @@ before_script:
 script:
   - yarn format
   - yarn lint
-  - yarn test --coverage --coverageReporters=text-lcov | coveralls
+  - yarn test
+  - yarn coverage
