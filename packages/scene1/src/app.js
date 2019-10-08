@@ -14,7 +14,9 @@ const App = () => {
   return (
     <div style={{ padding: '2rem' }}>
       <h1 style={{ color: '#ccc' }}>WebGL Test</h1>
-      <span style={{ color: '#666' }} ref={spanReference}>initial</span>
+      <span style={{ color: '#666' }} ref={spanReference}>
+        initial
+      </span>
       <div style={{ border: '1px solid #ccc' }}>
         <Unity unityContent={unityContent} />
       </div>

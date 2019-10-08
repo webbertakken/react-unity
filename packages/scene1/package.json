@@ -30,11 +30,11 @@
     "test": "react-scripts test",
     "lint": "concurrently \"yarn:lint:*\"",
     "lint:js": "eslint . --format table --ignore-path ../../.eslintignore",
-    "lint:format": "prettier --check \"**/*.{js,json,css,scss,md,yml,yaml}\"",
+    "lint:format": "prettier --check \"**/*.{js,json,css,scss,md,yml,yaml}\" --ignore-path ../../.eslintignore",
     "lint:styles": "stylelint \"**/*.{css,scss}\" --formatter verbose --ignore-path ../../.eslintignore",
     "fix": "concurrently \"yarn:fix:*\"",
     "fix:js": "eslint . --fix --format table --ignore-path ../../.eslintignore",
-    "fix:format": "prettier --write \"**/*.{js,json,css,scss,md,yml,yaml}\"",
+    "fix:format": "prettier --write \"**/*.{js,json,css,scss,md,yml,yaml}\" --ignore-path ../../.eslintignore",
     "fix:styles": "stylelint --fix \"**/*.{css,scss}\" --formatter verbose --ignore-path ../../.eslintignore"
   },
   "browserslist": {
